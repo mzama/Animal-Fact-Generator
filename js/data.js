@@ -81,7 +81,7 @@ var data = {
         },
         {
             "factHeading":"Ants are farmers!",
-            "factBody":"Leafcutter ants build special structures to cultivate a special fungus they grow to eat. The leaves they cut are brought back to the colony to feed the fungus. Other species of ants have been observed herding and protecting aphids for a nectar they secrete.",
+            "factBody":"Leafcutter ants build special structures to cultivate a particular fungus they grow to eat. The leaves they cut are brought back to the colony to feed the fungus. Other species of ants have been observed herding and protecting aphids for a nectar they secrete.",
             "type":"Ant",
             "link":"https://www.mcgill.ca/oss/article/did-you-know/did-you-know-leafcutter-ants-are-farmers-who-grow-fungi",
             "image":""            

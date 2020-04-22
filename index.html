@@ -2,20 +2,30 @@
 <html>
     <head>
         <title>Animal Fact Generator</title>
+        <meta propery="og:title" content="Animal Fact Generator">
 
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="main.css">
+        <meta name="description" content="Generates fun animal facts!">
+        <meta property="og:description" content="Generates fun animal facts!">
+
+        <meta name="keywords" content="animal, facts, fun facts, trivia, animal facts, facts about animals, nature, wildlife">
+        <meta charset="utf-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="Icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Icon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
         <script> </script>
-        <script type="text/javascript" src="data.js"></script>
-        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
         <div class="bg-image"></div>
         <div class="content-container">            
-            <div class="page-title">                
-                <div class="new-fact">
-                    <button id="newFact">New Fact</button>
-                </div>
+            <div class="page-title">
                 <h1>Animal
                     <br>
                     Fact<br>
@@ -32,10 +42,19 @@
                             Content! An interesting full description on a fact about an animal. I need more content to fill this line. Just a little more now to get a newline.
                         </p>                                 
                     </div>                    
-                </div>                
-                <div class="fact-link">
-                    <a href="#" target="_blank" rel="noopener noreferrer">Read more...</a>                    
+                </div>
+                <div class="fact-footer">                
+                    <div class="fact-link">                    
+                        <a href="#" target="_blank" rel="noopener noreferrer">Learn more...</a>                           
+                    </div>
+                <div class="new-fact">
+                            <button id="newFact">New Fact</button>
+                        </div>                                                                            
                 </div> 
+            </div>              
+            <div class="credits">
+                <span class="maz">Website by <a href="https://www.facebook.com/mzamariaphotography" target="_blank" rel="noopener noreferrer">Matteo Zamaria</a></span>
+                <span class="ada">Facts by <a href="https://adamcvean.wordpress.com/" target="_blank" rel="noopener noreferrer">Ada McVean</a></span>
             </div>
         </div>
     </body>

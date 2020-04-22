@@ -1,0 +1,194 @@
+/* Global Styles */
+:root {
+    --ui-color: #c0c0bd;
+    --header-height: 5rem;
+}
+a {
+    color: #19c8e3;
+    text-decoration: underline;
+    transition: all 0.15s ease-in-out;
+}
+a:hover,
+a:active {
+    color: #2086ab;
+    text-decoration: underline;
+}
+button {
+    background: transparent;
+    border: 3px solid var(--ui-color);
+    border-radius: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+    padding: 0.25rem 0.4rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out; 
+}
+button:hover,
+button:active {
+    background: transparent;
+    border: 3px solid #c0c0bd80; 
+    color: rgba(192, 192, 189, 0.5); 
+}
+html {
+    font-size: 22px;
+    overflow-x: hidden;
+}
+body {
+    background: #4c95a1;
+    color: var(--ui-color);
+    font-family: "Raleway", helvetica, arial, sans-serif;
+    font-weight: 300;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.bg-image {    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("Images/BG/Default/Default_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    filter: blur(1px);  
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    padding-top: var(--header-height);
+    position: fixed;
+    top: 0px;
+    z-index: -10;
+    transform: scale(1.05);
+    overflow: hidden;
+}
+.content-container {
+    position: relative;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", helvetica, arial, sans-serif;
+    font-weight: 100;
+}
+/* PAGE TITLE STYLES */
+.page-title { 
+    background: rgba(0,0,0,1);
+    box-sizing: border-box;
+    min-width: 100vw;
+    height: var(--header-height);
+    line-height: var(--header-height);
+    padding: 1rem 1.5rem;
+    position: fixed;
+    top: 0px;
+    vertical-align: middle;
+}
+.page-title h1 {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+/* FACT STYLES */
+.fact {
+    --sep-line-spacing: 0.9em;   
+    background: rgba(0,0,0,0.6);
+    border: 3px solid var(--ui-color);
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    margin: 9rem auto 2rem;
+    padding: 1em 1.25em;
+}
+.fact-title {        
+    border-bottom: 3px solid var(--ui-color);
+    flex: 0 0 0; 
+    line-height: 1.25;
+    margin-bottom: var(--sep-line-spacing);
+    padding-bottom: var(--sep-line-spacing);
+}
+.fact-title h2 {
+    font-size: 2.25em;
+}
+.fact-body {
+    flex: 1 1 5em;
+}
+.fact-copy {
+    line-height: 1.33;
+}
+.fact-copy img {
+    float: right;
+    border-radius: 5px;
+    margin-left: 1.25em;
+    width: 40%;
+}
+.fact-copy img:after {
+    clear: both;
+}
+.fact-footer {
+    border-top: 3px solid var(--ui-color);
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    margin-top: var(--sep-line-spacing);
+    padding-top: var(--sep-line-spacing);
+}
+.fact-link {
+    align-self: flex-end;
+    padding-bottom: 0.28rem;
+}
+/* NEW FACT BUTTON STYLES */
+.new-fact {
+    align-self: flex-end;
+}
+.new-fact button {
+    font-weight: 300;
+}
+/* Credit Styles */
+.credits {
+    bottom: 0px;
+    box-sizing: border-box;
+    left: 0px;
+    position: fixed;
+    text-align: right;
+    width: 100vw;
+    padding: 1rem 1.5rem;
+}
+
+.ada {
+    float: right;
+    text-align: right;
+}
+.maz {
+    float: left;
+    text-align: left;
+}
+/* MEDIA QUERY */
+@media (max-width: 980px) {
+    .fact {
+        margin-top: 7em;
+        max-width: 85vw;
+    }
+    .fact-title h2 {
+        font-size: 1.75rem;
+    }
+    .fact-link a {
+        font-size: 0.8em;
+    }
+    .new-fact button {
+        font-size: 0.75em;
+    }
+    .ada {
+        display: block;
+        float: none;
+        text-align: left;
+    } 
+    .maz {        
+        display: block;
+        float: none;
+    }
+    .credits {
+        box-sizing: content-box;
+        line-height: 1.33em;
+        padding-top: 0rem;
+        position: static;
+    }       
+}

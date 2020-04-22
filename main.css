@@ -1,0 +1,114 @@
+/* Global Styles */
+:root {
+    --ui-color: #c0c0bd;
+}
+a {
+    color: #19c8e3;
+    text-decoration: underline;
+    transition: all 0.15s ease-in-out;
+}
+a:hover,
+a:active {
+    color: #2086ab;
+    text-decoration: underline;
+}
+html {
+    font-size: 22px;
+}
+body {
+    background: #4c95a1;
+    color: var(--ui-color);
+    font-family: 'Raleway',"Lato", helvetica, arial, sans-serif;
+    min-height: 100vh;
+}
+.bg-image {    
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("Images/BG/Default/Default_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    filter: blur(3px);  
+    left: 0px;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: -10;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway',"Lato", helvetica, arial, sans-serif;
+    font-weight: 100;
+}
+/* PAGE TITLE STYLES */
+.page-title { 
+    background: rgba(0,0,0,0.2);
+    min-width: 100vw;
+}
+.page-title h1 {
+    font-size: 6vw;
+    max-width: 34vw;    
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+
+}
+/* FACT STYLES */
+.fact {
+    --sep-line-spacing: 0.9em;   
+    background: rgba(0,0,0,0.6);
+    border: 3px solid var(--ui-color);
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    margin: 4em auto;
+    padding: 1em 1.25em;
+}
+.fact-title {        
+    border-bottom: 3px solid var(--ui-color);
+    flex: 0 0 0; 
+    line-height: 1.25;
+    margin-bottom: var(--sep-line-spacing);
+    padding-bottom: var(--sep-line-spacing);
+}
+.fact-title h2 {
+    font-size: 2.25em;
+}
+.fact-body {
+    flex: 1 1 3em;
+}
+.fact-copy {
+    line-height: 1.33;
+}
+.fact-copy img {
+    float: right;
+    margin-left: 2em;
+    max-width: 25vw;
+}
+.fact-link {
+    border-top: 3px solid var(--ui-color);
+    flex: 0 0 auto;
+    margin-top: var(--sep-line-spacing);
+    padding-top: var(--sep-line-spacing);
+}
+/* NEW FACT BUTTON STYLES */
+.new-fact {
+    float: right;
+}
+.new-fact button {
+    background: transparent;
+    border: 3px solid var(--ui-color);
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Raleway',"Lato", helvetica, arial, sans-serif;
+    font-weight: 100;
+    margin: 1rem 1.5rem;
+    padding: 0.75em;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;  
+}
+.new-fact button:hover,
+.new-fact button:active {
+    background: transparent;
+    border: 3px solid rgba(192, 192, 189, 0.2); 
+    color: rgba(192, 192, 189, 0.2); 
+}

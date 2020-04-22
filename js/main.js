@@ -1,4 +1,9 @@
-var lastIndex = 0;
+var lastIndex = [];
+let bufferSize = 15;
+for (let i = 0; i < bufferSize; i++) {
+    lastIndex.push(0);
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     SetFact();
     window.addEventListener('keydown', e => {
@@ -10,13 +15,14 @@ document.addEventListener("DOMContentLoaded", function() {
 function SetFact() {
     window.scrollTo(0,0);
 
-    let newFactIndex = Math.floor(Math.random() * (data["Facts"].length));
+    let newFactIndex = Math.floor(Math.random() * data["Facts"].length);
     
-    while (newFactIndex === lastIndex) {
+    while (lastIndex.filter(i => i === newFactIndex).length > 0) {
         newFactIndex = Math.floor(Math.random() * (data["Facts"].length));
     }
     let newFact = data["Facts"][newFactIndex];
-    lastIndex = newFactIndex;
+    lastIndex.unshift(newFactIndex);
+    lastIndex.pop();
 
     document.querySelector(".fact-title h2").innerHTML = newFact["factHeading"];
     document.querySelector(".fact-copy p").innerHTML = newFact["factBody"];

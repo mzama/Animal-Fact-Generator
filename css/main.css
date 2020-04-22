@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6 {
 /* FACT STYLES */
 .fact {
     --sep-line-spacing: 0.9em;   
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     border: 3px solid var(--ui-color);
     box-sizing: border-box;
     border-radius: 15px;
@@ -104,15 +104,17 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.25;
     margin-bottom: var(--sep-line-spacing);
     padding-bottom: var(--sep-line-spacing);
+    text-shadow: #000 0px 0px 7px;
 }
 .fact-title h2 {
     font-size: 2.25em;
 }
 .fact-body {
-    flex: 1 1 5em;
+    flex: 1 1 12em;
 }
 .fact-copy {
-    line-height: 1.33;
+    line-height: 1.66;
+    text-shadow: #000 0px 0px 7px;
 }
 .fact-copy img {
     float: right;
@@ -169,6 +171,10 @@ h1,h2,h3,h4,h5,h6 {
     }
     .fact-title h2 {
         font-size: 1.75rem;
+        line-height: 1.15;
+    }
+    .fact-copy {
+        line-height: 1.33;
     }
     .fact-link a {
         font-size: 0.8em;

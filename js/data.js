@@ -74,7 +74,7 @@ var data = {
         },
         {
             "factHeading":"Koala Bears have fingerprints, just like humans!",
-            "factBody":"This seems to enhance their sense of touch, and allows them to be very picky eater's when feeling around eucalyptus trees for the best leaves.",
+            "factBody":"This seems to enhance their sense of touch, and allows them to be very picky eaters when feeling around eucalyptus trees for the best leaves.",
             "type":"Koala",
             "link":"https://www.mcgill.ca/oss/article/did-you-know/koalas-have-fingerprints-just-humans",
             "image":""            
@@ -87,7 +87,7 @@ var data = {
             "image":""            
         },
         {
-            "factHeading":"Bells attached to cat’s collars will not harm their hearing, but they are effective at preventing them killing wildlife!",
+            "factHeading":"Bells attached to cat’s collars will not harm their hearing, but they are effective at preventing them hunting wildlife!",
             "factBody":"Despite they're highly sensitive hearing, there is no evidence that a bell on a cat's collar causes harm to them or damage to their hearing. However, a bell on a collar does appear to reduce the amount of prey caught by an outdoor cat, although some fear the noise may make the cat more vulnerable to predators.",
             "type":"Cat",
             "link":"https://animalwellnessmagazine.com/bell-cats-collar/ ",
@@ -144,7 +144,7 @@ var data = {
         },
         {
             "factHeading":"All hares are rabbits.",
-            "factBody":"But not all rabbits are hares. Hare's are a unique group of rabbits with some key differences, such as precocial young, meaning their babies are born more mature and more able to fend fore themselves. Conversely, baby non-hare rabbits require parental care for some time before they are ready to set off on their own.",
+            "factBody":"But not all rabbits are hares. Hares are a unique group of rabbits with some key differences, such as precocial young, meaning their babies are born more mature and more able to fend fore themselves. Conversely, baby non-hare rabbits require parental care for some time before they are ready to set off on their own.",
             "type":"Rabbit",
             "link":"",
             "image":""            
@@ -192,7 +192,7 @@ var data = {
             "image":""            
         },
         {
-            "factHeading":"Owl's do not have eye 'balls'.",
+            "factHeading":"Owls do not have eye 'balls'.",
             "factBody":"Their eyes are actually shaped as cylinders. While this adaptation greatly improves their night-vision, it means they cannot rotate their eyes in their sockets like we can. Instead, owls must move their entire heads to look around, which is why they can turn their heads almost 270 degrees.",
             "type":"Owl",
             "link":"https://mcgill.ca/oss/article/did-you-know/owls-dont-have-eyeballs",

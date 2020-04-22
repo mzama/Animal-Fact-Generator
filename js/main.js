@@ -28,8 +28,10 @@ function SetFact() {
     document.querySelector(".fact-copy p").innerHTML = newFact["factBody"];
     if (newFact["image"]) {
         document.querySelector("#factImg").setAttribute("src", `Images/Fact/${newFact["image"]}`);
+        document.querySelector("#factImg").style.display = "block";
     } else {
         document.querySelector("#factImg").setAttribute("src", "");
+        document.querySelector("#factImg").style.display = "none";
     }
 
     if (newFact["link"]) {

@@ -1,6 +1,9 @@
 var lastIndex = 0;
 document.addEventListener("DOMContentLoaded", function() {
     SetFact();
+    window.addEventListener('keydown', e => {
+        if (e.keyCode >= 48 && e.keyCode <= 90) SetFact();
+    });
     document.querySelector("#newFact").addEventListener("click", SetFact);
 });
 

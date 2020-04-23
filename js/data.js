@@ -198,7 +198,7 @@ var data = {
         },
         {
             "factHeading":"Rats laugh when they are tickled.",
-            "factBody":"Researchers recorded rats producing high-pitched chittering in the ultrasonic range during play and when the rats were tickled. They believe this is akin to laughing. Most rat vocalisations are well above the human auditory range.",
+            "factBody":"Researchers recorded rats producing high-pitched chittering in the ultrasonic range during play and when tickled. They believe this is akin to laughing.",
             "type":"Rat",
             "link":"https://www.youtube.com/watch?v=d-84UJpYFRM",
             "image":""            

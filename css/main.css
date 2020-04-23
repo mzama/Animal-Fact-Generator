@@ -166,10 +166,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* MEDIA QUERY */
 @media (max-width: 980px) {
+    :root {
+        --header-height: 3.5rem;
+    }
     button:hover {
         background: transparent;
         border: 3px solid var(--ui-color);
         color: var(--ui-color);
+    }
+    .page-title {
+        padding: 0.5rem 1.5rem;
+    }
+    .page-title h1 {
+        font-size: 0.65rem;
     }
     .fact {
         margin-top: 7em;
@@ -185,7 +194,7 @@ h1,h2,h3,h4,h5,h6 {
     .fact-copy img {
         float: none;
         margin: 0.5em auto 1em; 
-        width: 90%;
+        width: 100%;
     }
     .fact-link a {
         font-size: 0.8em;

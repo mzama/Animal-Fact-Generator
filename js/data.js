@@ -144,7 +144,7 @@ var data = {
         },
         {
             "factHeading":"All hares are rabbits.",
-            "factBody":"But not all rabbits are hares. Hares are a unique group of rabbits with some key differences, such as precocial young, meaning their babies are born more mature and more able to fend fore themselves. Conversely, baby non-hare rabbits require parental care for some time before they are ready to set off on their own.",
+            "factBody":"But not all rabbits are hares. Hares are a unique group of rabbits with some key differences, such as precocial young, meaning their babies are born more mature and more able to fend for themselves. Conversely, baby non-hare rabbits require parental care for some time before they are ready to set off on their own.",
             "type":"Rabbit",
             "link":"",
             "image":""            
@@ -179,7 +179,7 @@ var data = {
         },
         {
             "factHeading":"Cats and dogs are not colour-blind.",
-            "factBody":"However, they do not see colours the same as humans.",
+            "factBody":"However, they do not see the same range of colours as humans.",
             "type":"Cat",
             "link":"https://mcgill.ca/oss/article/you-asked/are-cats-and-dogs-colourblind",
             "image":""            

@@ -136,11 +136,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 .fact-link {
     align-self: flex-end;
+    flex: 0 1 auto;
     padding-bottom: 0.28rem;
+}
+.twitt-button {
+    align-self: flex-end;
+    flex: 0 1 auto;
 }
 /* NEW FACT BUTTON STYLES */
 .new-fact {
     align-self: flex-end;
+    flex: 0 1 auto;
 }
 .new-fact button {
     font-weight: 300;
@@ -197,10 +203,13 @@ h1,h2,h3,h4,h5,h6 {
         width: 100%;
     }
     .fact-link a {
-        font-size: 0.8em;
+        font-size: 0.7em;        
+    }
+    .twitt-button {
+        align-self: flex-start;
     }
     .new-fact button {
-        font-size: 0.75em;
+        font-size: 0.5em;
     }
     .ada {
         display: block;

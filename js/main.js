@@ -76,6 +76,25 @@ function SetFact(_FID) {
     document.querySelector(".bg-image").style.transition = "none";
     document.querySelector(".bg-image").style.opacity = 0;
     setTimeout(ResetImageOpac, 1);
+
+    document.querySelector(".twitt-button").innerHTML="";
+    
+    let twitSize = "large";
+    if (window.matchMedia("(max-width: 980px)").matches) {
+        twitSize="small";
+    }
+
+    twttr.widgets.createShareButton(
+        location.href,
+        document.querySelector(".twitt-button"),
+        {
+            size: `${twitSize}`,
+            text: `Did you know: ${newFact.factHeading}\n`,            
+            hashtags: "SciComm",
+            via: "AdaMcVean",
+            related: "animals,animalfacts,trivia,nature,wildlife,SciComm"
+        }
+      );
 }
 
 function ResetImageOpac() {

@@ -58,7 +58,7 @@ var data = {
         {
             "type":"Rat",
             "link":"https://en.wikipedia.org/wiki/Rat",
-            "bgCount":""
+            "bgCount":"6"
         }
     ],
     "Facts":[

@@ -111,7 +111,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 2.25em;
 }
 .fact-body {
-    flex: 1 1 12em;
+    flex: 1 1 12.5em;
 }
 .fact-copy {
     line-height: 1.66;

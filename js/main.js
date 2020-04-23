@@ -7,11 +7,11 @@ for (let i = 0; i < bufferSize; i++) {
 
 document.addEventListener("DOMContentLoaded", function() {
     SetFact();
-    LoadImages();
     window.addEventListener('keydown', e => {
         if (e.keyCode >= 48 && e.keyCode <= 90) SetFact();
     });
-    document.querySelector("#newFact").addEventListener("click", SetFact);
+    document.querySelector("#newFact").addEventListener("click", SetFact);    
+    LoadImages();
 });
 
 function LoadImages() {
@@ -64,4 +64,13 @@ function SetFact() {
     }
 
     document.querySelector(".bg-image").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${bgURL})`;
+    document.querySelector(".bg-image").style.transition = "none";
+    document.querySelector(".bg-image").style.opacity = 0;
+    setTimeout(ResetImageOpac, 1);
+}
+
+function ResetImageOpac() {
+    console.log("Removing no-opac");
+    document.querySelector(".bg-image").style.transition = "opacity 0.2s ease-in-out";
+    document.querySelector(".bg-image").style.opacity = 1;
 }

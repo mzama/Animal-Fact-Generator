@@ -54,6 +54,11 @@ var data = {
             "type":"Owl",
             "link":"https://en.wikipedia.org/wiki/Owl",
             "bgCount":"8"
+        },
+        {
+            "type":"Rat",
+            "link":"https://en.wikipedia.org/wiki/Rat",
+            "bgCount":""
         }
     ],
     "Facts":[
@@ -92,14 +97,7 @@ var data = {
             "type":"Cat",
             "link":"https://animalwellnessmagazine.com/bell-cats-collar/ ",
             "image":""            
-        },
-        {
-            "factHeading":"Bells attached to cat’s collars will not harm their hearing, but they are effective at preventing them killing wildlife!",
-            "factBody":"Despite they're highly sensitive hearing, there is no evidence that a bell on a cat's collar causes harm to them or damage to their hearing. However, a bell on a collar does appear to reduce the amount of prey caught by an outdoor cat, although some fear the noise may make the cat more vulnerable to predators.",
-            "type":"Cat",
-            "link":"https://animalwellnessmagazine.com/bell-cats-collar/",
-            "image":""            
-        },
+        }
         {
             "factHeading":"Caffeine and chocolate are poisonous to dogs... but the dose matters.",
             "factBody":"Dogs cannot digest caffeine or theobromine (a component of chocolate), but that doesn’t mean any amount of chocolate will make them sick. As with all things, the dose makes the poison, and a larger dog will require a much higher dose of chocolate to become ill.",
@@ -108,7 +106,7 @@ var data = {
             "image":""            
         },
         {
-            "factHeading":"THC is toxic to dogs, cats and most other companion animals!",
+            "factHeading":"THC is toxic to dogs, cats, and most other companion animals!",
             "factBody":"While many humans consume cannabis for the psychoactive effects of THC, it is highly toxic to most other animals. Care should be taken to ensure pets and other animals cannot access cannabis.",
             "type":"Dog",
             "link":"https://mcgill.ca/oss/article/health/woofer-madness-cannabis-companion-animals-and-what-legalization-means-your-pets",
@@ -116,7 +114,7 @@ var data = {
         },
         {
             "factHeading":"Mosquitos follow your breath to find you.",
-            "factBody":"Mosquitos find their prey by following plumes of carbon dioxide as well as other volatile chemicals produced by animals like acetone, lactic acid and sulcatone. They also may or may not be more attracted to certain blood types.",
+            "factBody":"Mosquitos find their prey by following plumes of carbon dioxide, as well as other volatile chemicals produced by animals like acetone, lactic acid and sulcatone. They also may or may not be more attracted to certain blood types.",
             "type":"Bug",
             "link":"https://mcgill.ca/oss/article/health-technology/why-mosquitos-bite-you-and-how-make-them-stop",
             "image":""            
@@ -137,14 +135,14 @@ var data = {
         },
         {
             "factHeading":"All toads are frogs.",
-            "factBody":"But not all frogs are toads. Toads are a special subset of frogs.",
+            "factBody":"But not all frogs are toads. Toads are a unique subset of frogs.",
             "type":"Frog",
             "link":"",
             "image":""            
         },
         {
             "factHeading":"All hares are rabbits.",
-            "factBody":"But not all rabbits are hares. Hares are a unique group of rabbits with some key differences, such as precocial young, meaning their babies are born more mature and more able to fend for themselves. Conversely, baby non-hare rabbits require parental care for some time before they are ready to set off on their own.",
+            "factBody":"But, not all rabbits are hares. Hares are a unique group of rabbits with some key differences, such as precocial young, meaning their babies are born more mature and more able to fend for themselves. Conversely, baby non-hare rabbits require parental care for some time before they are ready to set off on their own.",
             "type":"Rabbit",
             "link":"",
             "image":""            
@@ -196,6 +194,27 @@ var data = {
             "factBody":"Their eyes are actually shaped as cylinders. While this adaptation greatly improves their night-vision, it means they cannot rotate their eyes in their sockets like we can. Instead, owls must move their entire heads to look around, which is why they can turn their heads almost 270 degrees.",
             "type":"Owl",
             "link":"https://mcgill.ca/oss/article/did-you-know/owls-dont-have-eyeballs",
+            "image":""            
+        },
+        {
+            "factHeading":"Rats laugh when they are tickled.",
+            "factBody":"Researchers recorded rats producing high-pitched chittering in the ultrasonic range during play and when the rats were tickled. They believe this is akin to laughing. Most rat vocalisations are well above the human auditory range.",
+            "type":"Rat",
+            "link":"https://www.youtube.com/watch?v=d-84UJpYFRM",
+            "image":""            
+        },
+        {
+            "factHeading":"Rats demonstrate empathy.",
+            "factBody":"Rats have been shown to help fellow rats in distress, even at the cost of a personal reward. When one rat had free access to a tasty chocolate treat, but their companion was trapped in an uncomfortable cage, the free rat would release their trapped companion and allow them to share some of the chocoalte instead of eating it all themselves (as they did in the absence of a trapped friend).",
+            "type":"Rat",
+            "link":"https://www.nih.gov/news-events/nih-research-matters/rats-show-empathy-too",
+            "image":""            
+        },
+        {
+            "factHeading":"Rats don't actually squeak like they do in movies.",
+            "factBody":"Rats possess an incredible vocal range, extending from 2kHz-100kHz. The majority of their vocalisations are made in their upper range, well outside the limited human auditory range of 2-20kHz. Unlike popular media where rats are shown to be constantly squeaking, around humans they actually appear almost silent, unless under distress when they make noises within our own auditory range.",
+            "type":"Rat",
+            "link":"https://www.mcgill.ca/oss/article/did-you-know-general-science/rats-dont-really-squeak",
             "image":""            
         }
     ]

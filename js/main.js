@@ -1,14 +1,15 @@
 var lastIndex = [];
 let bufferSize = 15;
-
 for (let i = 0; i < bufferSize; i++) {
     lastIndex.push(0);
 }
 
+var FID = new URLSearchParams(location.search).get("FID");
+
 document.addEventListener("DOMContentLoaded", function() {
-    SetFact();
+    SetFact(FID);
     window.addEventListener('keydown', e => {
-        if (e.keyCode >= 48 && e.keyCode <= 90) SetFact();
+        if (e.keyCode >= 48 && e.keyCode <= 90) SetFact("");
     });
     document.querySelector("#newFact").addEventListener("click", SetFact);    
     LoadImages();
@@ -24,14 +25,20 @@ function LoadImages() {
     });
 }
 
-function SetFact() {
+function SetFact(_FID) {
     window.scrollTo(0,0);
 
-    let newFactIndex = Math.floor(Math.random() * data["Facts"].length);
-    
-    while (lastIndex.filter(i => i === newFactIndex).length > 0) {
-        newFactIndex = Math.floor(Math.random() * (data["Facts"].length));
+    let newFactIndex = 0;
+    if(_FID && !isNaN(_FID) && _FID >= 0 && _FID < data["Facts"].length) {
+        newFactIndex = _FID;
+        FID = "";
+    } else {
+        newFactIndex = Math.floor(Math.random() * data["Facts"].length);    
+        while (lastIndex.filter(i => i === newFactIndex).length > 0) {
+            newFactIndex = Math.floor(Math.random() * (data["Facts"].length));
+        }
     }
+
     let newFact = data["Facts"][newFactIndex];
     lastIndex.unshift(newFactIndex);
     lastIndex.pop();
@@ -70,7 +77,6 @@ function SetFact() {
 }
 
 function ResetImageOpac() {
-    console.log("Removing no-opac");
     document.querySelector(".bg-image").style.transition = "opacity 0.2s ease-in-out";
     document.querySelector(".bg-image").style.opacity = 1;
 }

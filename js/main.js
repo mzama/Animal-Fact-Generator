@@ -1,16 +1,28 @@
 var lastIndex = [];
 let bufferSize = 15;
+
 for (let i = 0; i < bufferSize; i++) {
     lastIndex.push(0);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     SetFact();
+    LoadImages();
     window.addEventListener('keydown', e => {
         if (e.keyCode >= 48 && e.keyCode <= 90) SetFact();
     });
     document.querySelector("#newFact").addEventListener("click", SetFact);
 });
+
+function LoadImages() {
+    let images = new Array();
+    data.Defaults.forEach(d => {
+        for (let i = 0; i < d.bgCount; i++) {
+            images[i] = new Image();
+            images[i].src = `Images/BG/${d.type}/${d.type}_${i+1}.jpg`
+        }
+    });
+}
 
 function SetFact() {
     window.scrollTo(0,0);

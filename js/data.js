@@ -97,7 +97,7 @@ var data = {
             "type":"Cat",
             "link":"https://animalwellnessmagazine.com/bell-cats-collar/ ",
             "image":""            
-        }
+        },
         {
             "factHeading":"Caffeine and chocolate are poisonous to dogs... but the dose matters.",
             "factBody":"Dogs cannot digest caffeine or theobromine (a component of chocolate), but that doesn’t mean any amount of chocolate will make them sick. As with all things, the dose makes the poison, and a larger dog will require a much higher dose of chocolate to become ill.",

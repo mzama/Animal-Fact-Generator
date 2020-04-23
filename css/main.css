@@ -26,7 +26,7 @@ button {
     text-transform: uppercase;
     transition: all 0.2s ease-in-out; 
 }
-button:hover
+button:hover,
 button:active {
     background: transparent;
     border: 3px solid #c0c0bd80; 

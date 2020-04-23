@@ -43,6 +43,8 @@ function SetFact(_FID) {
     lastIndex.unshift(newFactIndex);
     lastIndex.pop();
 
+    history.replaceState(`Fact: ${newFactIndex}`, 'Animal Fact Generator', `/?FID=${newFactIndex}`);
+
     document.querySelector(".fact-title h2").innerHTML = newFact["factHeading"];
     document.querySelector(".fact-copy p").innerHTML = newFact["factBody"];
     if (newFact["image"]) {

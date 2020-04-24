@@ -88,13 +88,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* HEADER LINK STYLES */
 .header-links {
-    line-height: 1;
+    line-height: 3rem;
     float: right;
     text-align: right;
+    vertical-align: middle;
 }
 .header-links a {
     color: var(--ui-color);
-    font-size: 2.9rem;
+    font-size: 2rem;
     text-decoration: none;
 }
 .header-links a:hover,
@@ -200,8 +201,11 @@ h1,h2,h3,h4,h5,h6 {
     .page-title h1 {
         font-size: 0.8rem;
     }
+    .header-links {
+        line-height: 2.35rem;
+    }
     .header-links a {
-        font-size: 2.3rem;
+        font-size: 1.5rem;
     }
     .fact {
         margin-top: 7em;

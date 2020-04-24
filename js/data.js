@@ -205,7 +205,7 @@ var data = {
         },
         {
             "factHeading":"Rats demonstrate empathy.",
-            "factBody":"Rats have been shown to help fellow rats in distress, even at the cost of a personal reward. When one rat had free access to a tasty chocolate treat, but their companion was trapped in an uncomfortable cage, the free rat would release their trapped companion and allow them to share some of the chocoalte instead of eating it all themselves (as they did in the absence of a trapped friend).",
+            "factBody":"Rats have been shown to help fellow rats in distress, even at the cost of a personal reward. When one rat had free access to a tasty chocolate treat, but their companion was trapped in an uncomfortable cage, the free rat would release their trapped companion and allow them to share some of the chocolate instead of eating it all themselves (as they did in the absence of a trapped friend).",
             "type":"Rat",
             "link":"https://www.nih.gov/news-events/nih-research-matters/rats-show-empathy-too",
             "image":""            

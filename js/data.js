@@ -6,8 +6,8 @@ var data = {
             "bgCount":"6"
         },
         {
-            "type":"Koala",
-            "link":"https://en.wikipedia.org/wiki/Koala",
+            "type":"Marsupial",
+            "link":"https://en.wikipedia.org/wiki/Marsupial",
             "bgCount":"5"
         },
         {
@@ -59,6 +59,16 @@ var data = {
             "type":"Rat",
             "link":"https://en.wikipedia.org/wiki/Rat",
             "bgCount":"6"
+        },
+        {
+            "type":"Wetland",
+            "link":"https://en.wikipedia.org/wiki/Wetland",
+            "bgCount":"7"
+        },
+        {
+            "type":"Pangolin",
+            "link":"https://en.wikipedia.org/wiki/Pangolin",
+            "bgCount":"2"
         }
     ],
     "Facts":[
@@ -80,7 +90,7 @@ var data = {
         {
             "factHeading":"Koala Bears have fingerprints, just like humans!",
             "factBody":"This seems to enhance their sense of touch, and allows them to be very picky eaters when feeling around eucalyptus trees for the best leaves.",
-            "type":"Koala",
+            "type":"Marsupial",
             "link":"https://www.mcgill.ca/oss/article/did-you-know/koalas-have-fingerprints-just-humans",
             "image":""            
         },
@@ -216,6 +226,48 @@ var data = {
             "type":"Rat",
             "link":"https://www.mcgill.ca/oss/article/did-you-know-general-science/rats-dont-really-squeak",
             "image":""            
+        },
+        {
+            "factHeading":"Dogs raise their legs when they pee to appear bigger than they are.",
+            "factBody":"This behaviour appears related to the size of the dog, with smaller dogs more likely to raise their leg. The frequency and height of leg raising also seems related to mating, territory, and intimidation of other competitors.",
+            "type":"Dog",
+            "link":"https://mcgill.ca/oss/article/did-you-know/little-dogs-are-trying-look-tough-when-they-raise-their-leg-really-high-pee",
+            "image":""            
+        },
+        {
+            "factHeading":"Dragonflies experience as much G-force as fighter pilots when flying.",
+            "factBody":"These incredible insects are so agile and nimble that that as they maneuver through the air they can experience up to 9 times the force of gravity on their small bodies. While they accelerate with a force of 4g, they undergo much higher forces during their quick turns. This is comparable to the intense forces experienced by human fighter pilots, although most humans go unconcious around only 5g of force.",
+            "type":"Bug",
+            "link":"https://mcgill.ca/oss/article/did-you-know/dragonflies-experience-much-g-force-fighter-pilots",
+            "image":""            
+        },
+        {
+            "factHeading":"Beaver teeth are reinforced by metal.",
+            "factBody":"Like all other rodents, beaver incisors never stop growing throughout the animal's life. However, because of the intense stress their teeth undergo from cutting down trees, their enamel contains a significant amount of iron to make them stronger and more resistant to acid. The iron gives beaver teeth their distinctive orange colouring, the same reason our blood is red!",
+            "type":"Wetland",
+            "link":"https://mcgill.ca/oss/article/did-you-know/beavers-have-metal-teeth",
+            "image":""            
+        },
+        {
+            "factHeading":"Rabbits need to eat their own poop.",
+            "factBody":"Rabbits perform coprophagy, meaning they produce a special type of faeces called caecotropes that form an important part of their diet. Their normal herbivorous food of grasses and weeds is very fibrous, but difficult to digest. To ensure they extract the maximum amount of nutrients possible from every meal, they digest everything twice, first producing ceocotropes, then re-ingesting and re-digesting these before excreting it as normal faeces that they do not eat.",
+            "type":"Rabbit",
+            "link":"https://mcgill.ca/oss/article/did-you-know/rabbits-eat-their-own-poop",
+            "image":""            
+        },
+        {
+            "factHeading":"Wombats poop in squares.",
+            "factBody":"This is a result of their incredibly efficient digestives tracts! By the time fecal matter reaches the end of their 13 meter long digestive tract, it is so dried out that it retains whatever shape it has been moulded into, which happens to be a cube for these animals.",
+            "type":"Marsupial",
+            "link":"https://mcgill.ca/oss/article/did-you-know/wombats-poop-squares",
+            "image":"Wombat_Square_Poop.jpg"            
+        },
+        {
+            "factHeading":"Pangolins use rocks in lieu of teeth.",
+            "factBody":"Pangolins, also called 'Scaly Anteaters', have no teeth. They eat only insects, and so have adapted their mouths to accomodate an very long tongue with sticky saliva to grab bugs out of their nests. To help crush up and digest their food, they also consume many small rocks and pebbles, known as gastroliths. These sit in a special organ called the gizzard, where, along with internal horn-like projections, their food is crushed up and 'chewed' after it is swallowed.",
+            "type":"Pangolin",
+            "link":"https://mcgill.ca/oss/article/did-you-know-general-science/pangolins-use-rocks-lieu-teeth",
+            "image":""            
         }
-    ]
+    ]    
 };

@@ -226,9 +226,6 @@ h1,h2,h3,h4,h5,h6 {
     .fact-link a {
         font-size: 0.7em;        
     }
-    .twitt-button {
-        align-self: flex-start;
-    }
     .new-fact button {
         font-size: 0.5em;
     }

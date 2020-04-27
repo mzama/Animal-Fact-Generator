@@ -9,7 +9,7 @@ var FID = new URLSearchParams(location.search).get("FID");
 document.addEventListener("DOMContentLoaded", function() {
     SetFact(FID);
     window.addEventListener('keydown', e => {
-        if (e.keyCode >= 48 && e.keyCode <= 90) SetFact("");
+        if (e.keyCode >= 37 && e.keyCode <= 40) SetFact("");
     });
     document.querySelector("#newFact").addEventListener("click", SetFact);    
     LoadImages();

@@ -29,9 +29,14 @@ function SetFact(_FID) {
     window.scrollTo(0,0);
 
     let newFactIndex = 0;
-    if(_FID && !isNaN(_FID) && _FID >= 0 && _FID < data["Facts"].length) {
-        newFactIndex = _FID;
-        FID = "";
+    if(_FID && !isNaN(_FID) && _FID >= 0) {
+        if (_FID > data["Facts"].length) {
+            newFactIndex = data["Facts"].length - 1;
+            FID = "";
+        } else {
+            newFactIndex = _FID;
+            FID = "";
+        }
     } else {
         newFactIndex = Math.floor(Math.random() * data["Facts"].length);    
         while (lastIndex.filter(i => i === newFactIndex).length > 0) {

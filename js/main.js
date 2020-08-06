@@ -1,28 +1,41 @@
 var lastIndex = [];
-let bufferSize = 15;
+var imagesPreLoaded = false;
+
+let bufferSize = data["Facts"].length - 3;
 for (let i = 0; i < bufferSize; i++) {
     lastIndex.push(0);
 }
 
 var FID = new URLSearchParams(location.search).get("FID");
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {   
     SetFact(FID);
     window.addEventListener('keydown', e => {
         if (e.keyCode >= 37 && e.keyCode <= 40) SetFact("");
     });
-    document.querySelector("#newFact").addEventListener("click", SetFact);    
-    LoadImages();
+    document.querySelector("#newFact").addEventListener("click", SetFact);   
+    LoadSmallImages();
 });
 
-function LoadImages() {
-    let images = new Array();
+function LoadSmallImages() {
+    let _images = new Array();
+    data.Defaults.forEach(d => {          
+        _images.push(new Image());
+        _images[_images.length - 1].src = `Images/BG/${d.type}/${d.type}_0.jpg`
+    });
+
+    LoadAllImages();
+}
+
+function LoadAllImages() {
+    let _images = new Array();
     data.Defaults.forEach(d => {
-        for (let i = 0; i < d.bgCount; i++) {
-            images[i] = new Image();
-            images[i].src = `Images/BG/${d.type}/${d.type}_${i+1}.jpg`
+        for (let i = 0; i < d.bgCount; i++) {            
+            _images[i] = new Image();
+            _images[i].src = `Images/BG/${d.type}/${d.type}_${i+1}.jpg`
         }
     });
+    imagesPreLoaded = true;
 }
 
 function SetFact(_FID) {
@@ -67,14 +80,17 @@ function SetFact(_FID) {
     }
 
     let bgURL = "";
-    let newImgIndex = 0;
-    let bgImgCount = data["Defaults"].filter(d => d.type === newFact["type"])[0]["bgCount"];
-
-    if (bgImgCount < 1) {
-        bgURL = "Images/BG/Default/Default_1.jpg";
-    } else {
-        newImgIndex = Math.ceil(Math.random() * bgImgCount)
-        bgURL=`Images/BG/${newFact["type"]}/${newFact["type"]}_${newImgIndex}.jpg`;
+    if (!imagesPreLoaded) {
+        bgURL=`Images/BG/${newFact["type"]}/${newFact["type"]}_0.jpg`
+    } else {                 
+        let bgImgCount = data["Defaults"].filter(d => d.type === newFact["type"])[0]["bgCount"];
+        if (bgImgCount < 1) {
+            bgURL = "Images/BG/Default/Default_1.jpg";
+        } else {
+            let newImgIndex = 0;  
+            newImgIndex = Math.ceil(Math.random() * bgImgCount)
+            bgURL=`Images/BG/${newFact["type"]}/${newFact["type"]}_${newImgIndex}.jpg`;
+        }
     }
 
     document.querySelector(".bg-image").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${bgURL})`;

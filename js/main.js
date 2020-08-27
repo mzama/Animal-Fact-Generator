@@ -1,4 +1,5 @@
 var lastIndex = [];
+var imagesToLoad = 0;
 var imagesPreLoaded = false;
 
 let bufferSize = data["Facts"].length - 3;
@@ -23,19 +24,26 @@ function LoadSmallImages() {
         _images.push(new Image());
         _images[_images.length - 1].src = `Images/BG/${d.type}/${d.type}_0.jpg`
     });
-
     LoadAllImages();
 }
 
 function LoadAllImages() {
     let _images = new Array();
     data.Defaults.forEach(d => {
-        for (let i = 0; i < d.bgCount; i++) {            
+        for (let i = 0; i < d.bgCount; i++) {      
+            imagesToLoad++;    
             _images[i] = new Image();
-            _images[i].src = `Images/BG/${d.type}/${d.type}_${i+1}.jpg`
+            _images[i].src = `Images/BG/${d.type}/${d.type}_${i+1}.jpg`;            
+            _images[i].onload = onImageLoaded;
         }
     });
-    imagesPreLoaded = true;
+}
+
+var onImageLoaded = function() {
+    imagesToLoad--;
+    if (imagesToLoad < 1) {
+        imagesPreLoaded = true;
+    }
 }
 
 function SetFact(_FID) {

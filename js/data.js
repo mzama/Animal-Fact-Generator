@@ -1,84 +1,14 @@
 var data = {
  "Defaults": [
   {
-   "type": "Turtle",
-   "link": "https://en.wikipedia.org/wiki/Turtle",
-   "bgCount": "9"
+   "type": "Alpine",
+   "link": "https://en.wikipedia.org/wiki/Alpine_tundra",
+   "bgCount": "6"
   },
   {
    "type": "Ant",
    "link": "https://en.wikipedia.org/wiki/Ant",
    "bgCount": "9"
-  },
-  {
-   "type": "Cat",
-   "link": "https://en.wikipedia.org/wiki/Cat",
-   "bgCount": "5"
-  },
-  {
-   "type": "Bee",
-   "link": "https://en.wikipedia.org/wiki/Bee",
-   "bgCount": "7"
-  },
-  {
-   "type": "Dog",
-   "link": "https://en.wikipedia.org/wiki/Dog",
-   "bgCount": "11"
-  },
-  {
-   "type": "Bug",
-   "link": "https://en.wikipedia.org/wiki/Invertebrate",
-   "bgCount": "10"
-  },
-  {
-   "type": "Fish",
-   "link": "https://en.wikipedia.org/wiki/Fish",
-   "bgCount": "9"
-  },
-  {
-   "type": "Rabbit",
-   "link": "https://en.wikipedia.org/wiki/Rabbit",
-   "bgCount": "10"
-  },
-  {
-   "type": "Frog",
-   "link": "https://en.wikipedia.org/wiki/Frog",
-   "bgCount": "10"
-  },
-  {
-   "type": "Lizard",
-   "link": "https://en.wikipedia.org/wiki/Lizard",
-   "bgCount": "7"
-  },
-  {
-   "type": "Snake",
-   "link": "https://en.wikipedia.org/wiki/Snake",
-   "bgCount": "7"
-  },
-  {
-   "type": "Rat",
-   "link": "https://en.wikipedia.org/wiki/Rat",
-   "bgCount": "6"
-  },
-  {
-   "type": "Wetland",
-   "link": "https://en.wikipedia.org/wiki/Wetland",
-   "bgCount": "7"
-  },
-  {
-   "type": "Bear",
-   "link": "https://en.wikipedia.org/wiki/Bear",
-   "bgCount": "6"
-  },
-  {
-   "type": "Bird",
-   "link": "https://en.wikipedia.org/wiki/Bird",
-   "bgCount": "14"
-  },
-  {
-   "type": "Alpine",
-   "link": "https://en.wikipedia.org/wiki/Alpine_tundra",
-   "bgCount": "6"
   },
   {
    "type": "Aquatic",
@@ -91,14 +21,54 @@ var data = {
    "bgCount": "6"
   },
   {
+   "type": "Bear",
+   "link": "https://en.wikipedia.org/wiki/Bear",
+   "bgCount": "6"
+  },
+  {
+   "type": "Bee",
+   "link": "https://en.wikipedia.org/wiki/Bee",
+   "bgCount": "7"
+  },
+  {
+   "type": "Bird",
+   "link": "https://en.wikipedia.org/wiki/Bird",
+   "bgCount": "14"
+  },
+  {
+   "type": "Bug",
+   "link": "https://en.wikipedia.org/wiki/Invertebrate",
+   "bgCount": "10"
+  },
+  {
+   "type": "Cat",
+   "link": "https://en.wikipedia.org/wiki/Cat",
+   "bgCount": "5"
+  },
+  {
    "type": "Desert",
    "link": "https://en.wikipedia.org/wiki/Desert_ecology",
    "bgCount": "8"
   },
   {
+   "type": "Dog",
+   "link": "https://en.wikipedia.org/wiki/Dog",
+   "bgCount": "11"
+  },
+  {
+   "type": "Fish",
+   "link": "https://en.wikipedia.org/wiki/Fish",
+   "bgCount": "9"
+  },
+  {
    "type": "Forest",
    "link": "https://en.wikipedia.org/wiki/Forest",
    "bgCount": "7"
+  },
+  {
+   "type": "Frog",
+   "link": "https://en.wikipedia.org/wiki/Frog",
+   "bgCount": "10"
   },
   {
    "type": "Grassland",
@@ -111,6 +81,11 @@ var data = {
    "bgCount": "6"
   },
   {
+   "type": "Lizard",
+   "link": "https://en.wikipedia.org/wiki/Lizard",
+   "bgCount": "7"
+  },
+  {
    "type": "Night",
    "link": "https://en.wikipedia.org/wiki/Nocturnality",
    "bgCount": "5"
@@ -119,6 +94,31 @@ var data = {
    "type": "Outback",
    "link": "https://en.wikipedia.org/wiki/Environment_of_Australia",
    "bgCount": "6"
+  },
+  {
+   "type": "Rabbit",
+   "link": "https://en.wikipedia.org/wiki/Rabbit",
+   "bgCount": "10"
+  },
+  {
+   "type": "Rat",
+   "link": "https://en.wikipedia.org/wiki/Rat",
+   "bgCount": "6"
+  },
+  {
+   "type": "Snake",
+   "link": "https://en.wikipedia.org/wiki/Snake",
+   "bgCount": "7"
+  },
+  {
+   "type": "Turtle",
+   "link": "https://en.wikipedia.org/wiki/Turtle",
+   "bgCount": "9"
+  },
+  {
+   "type": "Wetland",
+   "link": "https://en.wikipedia.org/wiki/Wetland",
+   "bgCount": "7"
   }
  ],
  "Facts": [
@@ -356,7 +356,7 @@ var data = {
   {
    "factHeading": "Tigers and Jaguars are attracted to the scent of Calvin Klein's \"Obsession for Men\".",
    "factBody": "Researchers at the Bronx Zoo compared the abilities of 23 different perfumes to attract the attention of tigers, and found this scent to be the winner. Field researchers have also begun using perfumes to attract jaguars in Nicargua. A chemical called 'civetone', made in part from the oil of a small (and adorable!) mammal called the African civet, seems to be responsible for captivating the cats' attention.",
-   "type": "Cat",
+   "type": "Jungle",
    "link": "https://mcgill.ca/oss/article/did-you-know-general-science/tigers-and-jaguars-are-attracted-scent-calvin-kleins-obsession-men",
    "image": ""
   },

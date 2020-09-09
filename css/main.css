@@ -62,6 +62,10 @@ body {
     overflow: hidden;
 }
 .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     position: relative;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -71,6 +75,7 @@ h1,h2,h3,h4,h5,h6 {
 /* PAGE TITLE STYLES */
 .page-title { 
     background: rgba(0,0,0,1);
+    /* background: red; */
     box-sizing: border-box;
     min-width: 100vw;
     height: var(--header-height);
@@ -170,10 +175,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* Credit Styles */
 .credits {
-    bottom: 0px;
     box-sizing: border-box;
-    left: 0px;
-    position: fixed;
+    position: static;
     width: 100vw;
     padding: 1rem 1.5rem;
 }
@@ -242,6 +245,5 @@ h1,h2,h3,h4,h5,h6 {
         box-sizing: content-box;
         line-height: 1.33em;
         padding-top: 0rem;
-        position: static;
     }       
 }

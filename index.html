@@ -40,6 +40,17 @@
     </head>
     <body>
         <div class="bg-image"></div>
+        <div class="start-window-bg"></div>
+        <div class="fact" id="startWindowNotification">            
+            <div class="fact-title">
+                <h2>Welcome to the Animal Fact Generator!</h2>
+            </div>
+            <div class="fact-copy">
+                Navigate using the arrow keys, or by pressing the New Fact button.<br><br>
+                Share facts by copying the entire url including the /?FID=XX at the end. Each number links to a specific fact!<br><br>
+                Press any key to close and view facts!
+            </div>
+        </div>        
         <div class="content-container">            
             <div class="page-title">                
                 <div class="header-links">
@@ -50,7 +61,7 @@
                     Generator</h1>
             </div>
             <div class="fact">
-                <div class="fact-title">
+                <div class="fact-title" id="factTitle">
                     <h2>Fact Heading</h2>
                 </div>
                 <div class="fact-body">
@@ -61,6 +72,7 @@
                         </p>                                 
                     </div>                    
                 </div>
+                <div class="fact-info">FID</div>
                 <div class="fact-footer">                
                     <div class="fact-link">                    
                         <a href="#" target="_blank" rel="noopener noreferrer">Learn more...</a>                           
@@ -75,7 +87,7 @@
                 </div>           
             <div class="credits">
                 <span class="ada">Facts by <a href="https://adamcvean.wordpress.com/" target="_blank" rel="noopener noreferrer">Ada McVean</a></span>
-                <span class="maz">Website by <a href="https://www.facebook.com/mzamariaphotography" target="_blank" rel="noopener noreferrer">Matteo Zamaria</a></span>               
+                <span class="maz">Website by <a href="https://github.com/mzama/Animal-Fact-Generator" target="_blank" rel="noopener noreferrer">Matteo Zamaria</a></span>               
             </div>
         </div>
     </body>

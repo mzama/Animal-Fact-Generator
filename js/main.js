@@ -12,9 +12,21 @@ var FID = new URLSearchParams(location.search).get("FID");
 document.addEventListener("DOMContentLoaded", function() {   
     SetFact(FID);
     window.addEventListener('keydown', e => {
-        if (e.keyCode >= 37 && e.keyCode <= 40) SetFact("");
+        if(!document.querySelector('#startWindowNotification').classList.contains("hidden")) {
+            document.querySelector('#startWindowNotification').classList.add("hidden");
+            document.querySelector('.start-window-bg').classList.add("hidden");
+            return;
+        }
+        if (e.key === "ArrowRight" || e.key === "ArrowLeft" || e.key ==="ArrowUp" || e.key === "ArrowDown") { SetFact(""); }        
+    });
+    window.addEventListener("click", e => {
+        if(!document.querySelector('#startWindowNotification').classList.contains("hidden")) {
+            document.querySelector('#startWindowNotification').classList.add("hidden");
+            document.querySelector('.start-window-bg').classList.add("hidden");
+        }
     });
     document.querySelector("#newFact").addEventListener("click", SetFact);   
+    
     LoadSmallImages();
 });
 
@@ -71,8 +83,9 @@ function SetFact(_FID) {
 
     history.replaceState(`Fact: ${newFactIndex}`, 'Animal Fact Generator', `/?FID=${newFactIndex}`);
 
-    document.querySelector(".fact-title h2").innerHTML = newFact["factHeading"];
+    document.querySelector("#factTitle h2").innerHTML = newFact["factHeading"];
     document.querySelector(".fact-copy p").innerHTML = newFact["factBody"];
+    document.querySelector(".fact-info").innerHTML = newFactIndex;
     if (newFact["image"]) {
         document.querySelector("#factImg").setAttribute("src", `Images/Fact/${newFact["image"]}`);
         document.querySelector("#factImg").style.display = "block";

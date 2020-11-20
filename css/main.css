@@ -2,6 +2,7 @@
 :root {
     --ui-color: #e0e0de;
     --header-height: 5rem;
+    --sep-line-spacing: 0.9em;   
 }
 a {
     color: #19c8e3;
@@ -72,6 +73,34 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Raleway", helvetica, arial, sans-serif;
     font-weight: 100;
 }
+.hidden {
+    visibility: hidden;
+}
+
+/* START NOTIFICATION STYLES */
+#startWindowNotification {
+    background: rgba(0,0,0,1);
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    width: 80vw;
+    z-index: 999;
+}
+.start-window-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 998;
+    transform: scale(1.05);
+    overflow: hidden;
+}
 /* PAGE TITLE STYLES */
 .page-title { 
     background: rgba(0,0,0,1);
@@ -108,8 +137,7 @@ h1,h2,h3,h4,h5,h6 {
     color: rgba(192, 192, 189, 0.5); 
 }
 /* FACT STYLES */
-.fact {
-    --sep-line-spacing: 0.9em;   
+.fact {    
     background: rgba(0,0,0,0.7);
     border: 3px solid var(--ui-color);
     box-sizing: border-box;
@@ -137,6 +165,7 @@ h1,h2,h3,h4,h5,h6 {
 .fact-copy {
     line-height: 1.66;
     text-shadow: #000 0px 0px 7px;
+    margin-bottom: var(--sep-line-spacing);
 }
 .fact-copy img {
     float: right;
@@ -159,6 +188,10 @@ h1,h2,h3,h4,h5,h6 {
     align-self: flex-end;
     flex: 0 1 auto;
     padding-bottom: 0.28rem;
+}
+.fact-info {
+    color: rgba(192, 192, 189, 0.5);
+    font-size: 0.75rem;
 }
 /* TWITTER AREA STYLES */
 .twitt-button {
@@ -188,6 +221,10 @@ h1,h2,h3,h4,h5,h6 {
     float: left;
     text-align: left;
 }
+.suggest-fact {
+    float: right;
+    text-align: center;
+}
 /* MEDIA QUERY */
 @media (max-width: 980px) {
     :root {
@@ -209,6 +246,10 @@ h1,h2,h3,h4,h5,h6 {
     }
     .header-links a {
         font-size: 1.5rem;
+    }
+    #startWindowNotification {
+        width: 85vw;
+        visibility: hidden;
     }
     .fact {
         margin-top: 7em;
@@ -240,6 +281,9 @@ h1,h2,h3,h4,h5,h6 {
     .maz {        
         display: block;
         float: none;
+    }
+    .suggest-fact {
+        display: block;
     }
     .credits {
         box-sizing: content-box;

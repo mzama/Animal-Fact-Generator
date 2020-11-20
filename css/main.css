@@ -251,6 +251,9 @@ h1,h2,h3,h4,h5,h6 {
         width: 85vw;
         visibility: hidden;
     }
+    .start-window-bg {
+        visibility: hidden;
+    }
     .fact {
         margin-top: 7em;
         max-width: 85vw;

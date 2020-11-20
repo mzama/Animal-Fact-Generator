@@ -10,6 +10,7 @@ for (let i = 0; i < bufferSize; i++) {
 var FID = new URLSearchParams(location.search).get("FID");
 
 document.addEventListener("DOMContentLoaded", function() {   
+    SetStartWindow();
     SetFact(FID);
     window.addEventListener('keydown', e => {
         if(!document.querySelector('#startWindowNotification').classList.contains("hidden")) {
@@ -29,6 +30,14 @@ document.addEventListener("DOMContentLoaded", function() {
     
     LoadSmallImages();
 });
+
+function SetStartWindow() {
+    if (window.matchMedia("(max-width: 980px)").matches){
+        document.querySelector("#startWindowCopy").innerHTML = "Share facts by copying the entire url including the /?FID=XX at the end. Each number links to a specific fact!<br><br>Touch anywhere to close and view facts!"
+    } else {
+        document.querySelector("#startWindowCopy").innerHTML = "Navigate using the arrow keys, or by pressing the New Fact button.<br><br>Share facts by copying the entire url including the /?FID=XX at the end. Each number links to a specific fact!<br><br>Press any key to close and view facts!"
+    }
+}
 
 function LoadSmallImages() {
     let _images = new Array();

@@ -248,11 +248,8 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 1.5rem;
     }
     #startWindowNotification {
+        top: 35%;
         width: 85vw;
-        visibility: hidden;
-    }
-    .start-window-bg {
-        visibility: hidden;
     }
     .fact {
         margin-top: 7em;

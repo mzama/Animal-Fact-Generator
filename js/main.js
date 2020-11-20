@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
     document.querySelector("#newFact").addEventListener("click", SetFact);   
-    
     LoadSmallImages();
 });
 

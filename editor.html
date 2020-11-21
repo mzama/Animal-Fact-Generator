@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animal Fact Editor</title>
+
+        <meta charset="utf-8" />    
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="Fonts/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="Icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Icon/favicon-16x16.png">
+        <!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/editor.css">
+
+        <script> </script>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/editor.js"></script>
+        <script>
+            function SelectText(containerID) {
+                container = document.querySelector(`#${containerID}`);
+                container.focus();
+                container.select();
+            }            
+        </script>
+    </head>
+    <body>
+        <div class="bg-image"></div>
+        <div class="content-container">            
+            <div class="page-title">
+                <div class="header-links">
+                    <button id="saveAll">Save All</button>
+                </div>      
+                <h1>Animal<br>
+                    Fact<br>
+                    Editor</h1>
+            </div>
+            <div class="two-col-container">
+                <div class="facts-scroll-section">
+                    <div class="create-fact-button">
+                        <button id="createFact">Create Fact</button>
+                    </div>
+                    <div class="facts-scroll">                        
+                    </div>
+                </div>
+                <div class="fact">
+                    <div class="fact-title">
+                        <h2>N</h2>  
+                        <textarea id="factHeadingArea" onclick="SelectText('factHeadingArea')">Fact Heading.</textarea>
+                    </div>
+                    <div class="fact-body">
+                        <div class="fact-copy">
+                                <textarea id="factCopyArea">An interesting full description on a fact about an animal. I need more content to fill this line. Just a little more now to get a newline.</textarea>
+                        </div>                    
+                    </div>
+                    <div class="fact-footer">                
+                        <div class="fact-link-input">                    
+                            <!-- <a href="#" target="_blank" rel="noopener noreferrer">Link</a>                            -->
+                            <input id="factLinkInput" value="Fact link." onclick="SelectText('factLinkInput')">
+                        </div>
+                        <div class="fact-type-input">                    
+                            <!-- <a href="#" target="_blank" rel="noopener noreferrer">Type.</a>                            -->
+                            <!-- <input id="factTypeInput" value="Fact type." onclick="SelectText('factTypeInput')"> -->
+                            <select id="factTypeInput" name="factTypeInput">
+                                <option value="Fact type.">Fact type.</option>    
+                            </select>
+                        </div>
+                        <div class="fact-image-input">                    
+                            <!-- <a href="#" target="_blank" rel="noopener noreferrer">Image</a>                            -->
+                            <input id="factImageInput" value="Fact image name." onclick="SelectText('factImageInput')">
+                        </div>                        
+                        <div class="save-fact">
+                            <button id="saveFact">S</button>
+                        </div>
+                        <div class="delete-fact">
+                            <button id="deleteFact">X</button>
+                        </div>                                                                                 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

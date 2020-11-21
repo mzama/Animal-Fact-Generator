@@ -210,20 +210,18 @@ h1,h2,h3,h4,h5,h6 {
 .credits {
     box-sizing: border-box;
     position: static;
+    text-align: center;
     width: 100vw;
     padding: 1rem 1.5rem;
 }
 .ada {
     float: right;
-    text-align: right;
 }
 .maz {
     float: left;
-    text-align: left;
 }
 .suggest-fact {
-    float: right;
-    text-align: center;
+    display: inline-block;
 }
 /* MEDIA QUERY */
 @media (max-width: 980px) {
@@ -276,7 +274,6 @@ h1,h2,h3,h4,h5,h6 {
     .ada {
         display: block;
         float: none;
-        text-align: left;
     } 
     .maz {        
         display: block;
@@ -284,10 +281,12 @@ h1,h2,h3,h4,h5,h6 {
     }
     .suggest-fact {
         display: block;
+        margin-bottom: 0.75rem;
     }
     .credits {
         box-sizing: content-box;
-        line-height: 1.33em;
+        line-height: 1.33rem;
+        text-align: left;
         padding-top: 0rem;
     }       
 }
